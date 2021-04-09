@@ -1,0 +1,45 @@
+body{
+	background-color: #f2f2f2;
+	background-image: imagens/teste.jpeg;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.azul{
+			background-color: #27408B;
+			}
+
+.claro{
+	color: #79CDCD
+}
+
+		.rodape{
+			text-align: center;
+			font-family: arial black;
+			color: green;
+			font-style: unset;
+			}
+
+
+		a:link, a:visited, a:active {
+			text-decoration:all;
+ 			}
+
+		a:hover {
+			text-decoration: underline; 
+			color: red;
+			background: lime
+			}
+
+		h1 {
+		background:  linear-gradient(lime, black);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: 	#8B4513;
+		font-size: 40px		
+	}
+
+		h3 {
+	font-family: 'courier new', 'tahoma','verdana','arial','sans-serif';
+	color: black
+}
