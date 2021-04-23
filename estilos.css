@@ -20,7 +20,7 @@ body{
 
 		.rodape{
 			text-align: center;
-			font-family: arial black;
+			font-family: 'Times New Roman' 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 			color: green;
 			font-style: unset;
 			}
@@ -45,6 +45,6 @@ body{
 	}
 
 		h3 {
-	font-family: 'courier new', 'tahoma','verdana','arial','sans-serif';
+	font-family: 'Times New Roman' 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	color: black
 }
