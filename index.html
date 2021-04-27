@@ -5,105 +5,47 @@
 	<meta charset="utf-8">
 	<meta name="author" content="Bianca-Machado">
 	<meta name="keywords" content="Ultramaratonista, Luiz alves, top team">
-	<link rel="stylesheet" href="estilos.css" type="text/css"> 
+	<link rel="stylesheet" href="estilos.css" type="text/css" media="screen"> 
 	<style>
 	
-	*{
-	margin:0;
-	padding:0
-}
-
-ul{
-	width: 880px;
-	list-style: none;
-	display: flex;
-	margin: 100px auto
-}
-
-
-.min{
-	width: 200px;
-	padding: 10px
-}
-
-.lbox{
-	visibility: hidden;
-	opacity:0;
-
-}
-
-.lbox:target{
-	opacity: 1;
-	visibility: visible;
-	width: 50%;
-	height: 50%;
-	top:0;
-	left:0;
-	background: rgba(10,10,10,7);
-	position: relative;
-	background-color: transparent;
-	text-align: center
-	
-
-
-}
-
-.box_img{
-	width: 1000px;
-	margin: 150px auto;
-	text-align: left;
-}
-
-.btn{
-	color: black;
-	font-family: 'Arial';
-	text-decoration: none;
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	font-size: 40px
-}
-
-#prev{
-	left: -15%;
-	top: 45%
-	
-}
-
-
-#next{
-	right: 1px;
-	top: 45%
-}
-
-
-
-#close{
-	top:0;
-	right: 2%
-}
-
-.tamanho{
-	width: 50%;
-	height: 50%
-}
-
-
-.box_img img{
-
-	opacity:0
-}
-
-.lbox:target .box_img img{
-	opacity: 1;
-	transition: opacity .4s linear
-}
 
 .colunas{
 		column-count: 2;
 	}
 
-	
+.bt {
+border:1px solid #25692A;
+border-radius:4px;
+display:inline-block; 
+/*Garante que tanto os links e os botões tenham a mesma altura */
+cursor:pointer; 
+/*Garante que a imagem da "mãozinha" apareça quando o leitor passar com o mouse sobre o botão*/
+font-family:Verdana;
+font-weight:bold;
+font-size:13px;
+padding:6px 10px;
+text-decoration:none;
+/*Remove a linha sob o texto dos links*/
+}
+
+.bt-az {
+border-color: #46a7f5;
+background:linear-gradient(to bottom, #86c6f8 5%, #27408B 100%);
+box-shadow:inset 0px 1px 0px 0px #d7ecfd;
+color:#fff;
+text-shadow:0px 1px 0px #528009;  
+}
+
+.bt-az:hover {
+background:linear-gradient(to bottom, #46a7f5 5%, #86c6f8 100%);
+}
+/*classe que deixa o botao azul*/
+
+.bt:active {
+position:relative;
+top:2px;}
+
+
 
 </style>
 
@@ -132,18 +74,17 @@ ul{
 	
 	</div>
 	<div>
-	<table align="center" border="0" cellpadding="3" cellspacing="10" bordercolor="none">
+	<table align="center" border="0" cellpadding="3" cellspacing="10" bordercolor="none" class="rodape">
 		<th>
- 		<a href="#contato">CONTATO</a>
+ 		<a href="#contato"><button class="bt bt-az"> CONTATO</a></botton>
  		</th>
  		<th>
- 		<a href="sobre.html" target="teste">SOBRE</a>
+ 		<a href="sobre.html" target="teste"> <button class="bt bt-az">SOBRE</a></botton>
  		</th>
  		<th>
- 		<a href="#galeria">GALERIA</a>
+ 		<a href="galeria.html"> <button class="bt bt-az">GALERIA</a></botton>
  		</th>
  		</table>
-	
 </div>
 
 <h1><center>Ultra maratonista - Qual o próximo desafio?</h1></center>
@@ -152,15 +93,18 @@ ul{
 <p>
 
 <div> 
-<h3> 
-	Luiz (44 anos), profissional de Facilities e corredor ultramaratonista. 
+<h3 class="colunas"> 
+	Luiz (44 anos), profissional de Facilities, Pai amoroso e corredor ultramaratonista. 
 	Formado em Finanças atuando em multinacionais encontrou-se com as corridas e desde 2012 busca seu Desenvolvimento no esporte atuando tambem ciclismo e natação. 
 	Resolveu participar de provas longas de corrida (endurance) à partir da necessidade de enfrentar novos desafios e ultrapassar seus limites. 
-	<p>
+	<p><br>
 	
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>	“A corrida me faz lembrar que eu consigo fazer  coisas difíceis”		<br>	
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Marie Krueger-Miller </i> <p>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Marie Krueger-Miller </i> <p><br>
 	
+	Desde os 17 anos sonhava em ser atleta e ultrapassar seus limites, optou primeiramente pela corrida e alimentação saudável e posteriormente seguiu para outras áreas devido à necessidade de se superar mais e mais. Abaixo temos algumas provas participadas que mais agregou impulsionou para continuar se superando a cada dia.<p><br>
+
+
 		
 		PROVAS DESTAQUES<p>
 
@@ -182,356 +126,27 @@ ul{
 
 </div>
 
-<div background="imagens/teste.jpeg">
-
 	<a name="contato"><h1>Contato:</h1></a>
 
 <a href="https://www.facebook.com/luiz.alves.77964201"> <img src="imagens/facebook.jpg" width="60" height="60"> </a>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 <a href="https://instagram.com/luizultramaratonista?igshid=1uef6qcu4z3et"> <img src="imagens/instagram.jpg" width="70" height="70"> </a>
 
-</div>
-	<a name="galeria"><h1><center>Galeria - Ultramaratonista</center></h1></a>
-
-<div bgcolor="#B5B5B5"> 
-<center>
-
-<ul>
-<li> <a href="#img1"><img src="imagens/uai.jpeg" class="min"></a> </li>
-<li> <a href="#img2"><img src="imagens/galeria1.jpeg" class="min"></a> </li>
-<li> <a href="#img3"><img src="imagens/galeria2.jpeg" class="min"></a> </li>
-<li> <a href="#img4"><img src="imagens/galeria3.jpeg" class="min"></a> </li>
-<li> <a href="#img5"><img src="imagens/05.jpeg" class="min"></a> </li>
-</ul>
-<ul>
-<li> <a href="#img6"><img src="imagens/galeria5.jpeg" class="min"></a> </li>
-<li> <a href="#img7"><img src="imagens/galeria6.jpeg" class="min"></a> </li>
-<li> <a href="#img8"><img src="imagens/galeria7.jpeg" class="min"></a> </li>
-<li> <a href="#img9"><img src="imagens/galeria8.jpeg" class="min"></a> </li>
-<li> <a href="#img10"><img src="imagens/galeria9.jpeg" class="min"></a> </li>
-</ul>
-<ul>
-<li> <a href="#img11"><img src="imagens/galeria10.jpeg" class="min"></a> </li>
-<li> <a href="#img12"><img src="imagens/galeria11.jpeg" class="min"></a> </li>
-<li> <a href="#img13"><img src="imagens/galeria12.jpeg" class="min"></a> </li>
-<li> <a href="#img14"><img src="imagens/galeria13.jpeg" class="min"></a> </li>
-<li> <a href="#img15"><img src="imagens/galeria14.jpeg" class="min"></a> </li>
-</ul>
-<ul>
-<li> <a href="#img16"><img src="imagens/galeria15.jpeg" class="min"></a> </li>
-<li> <a href="#img17"><img src="imagens/galeria16.jpeg" class="min"></a> </li>
-<li> <a href="#img18"><img src="imagens/galeria17.jpeg" class="min"></a> </li>
-<li> <a href="#img19"><img src="imagens/galeria18.jpeg" class="min"></a> </li>
-<li> <a href="#img20"><img src="imagens/galeria19.jpeg" class="min"></a> </li>
-</ul>
-<ul>
-<li> <a href="#img21"><img src="imagens/galeria20.jpeg" class="min"></a> </li>
-<li> <a href="#img22"><img src="imagens/galeria21.jpeg" class="min"></a> </li>
-<li> <a href="#img23"><img src="imagens/galeria22.jpeg" class="min"></a> </li>
-<li> <a href="#img24"><img src="imagens/galeria23.jpeg" class="min"></a> </li>
-<li> <a href="#img25"><img src="imagens/galeria24.jpeg" class="min"></a> </li>
-</ul>
-<ul>
-<li> <a href="#img26"><img src="imagens/galeria25.jpeg" class="min"></a> </li>
-<li> <a href="#img27"><img src="imagens/galeria26.jpeg" class="min"></a> </li>
-<li> <a href="#img28"><img src="imagens/galeria27.jpeg" class="min"></a> </li>
-<li> <a href="#img29"><img src="imagens/galeria28.jpeg" class="min"></a> </li>
-<li> <a href="#img30"><img src="imagens/galeria29.jpeg" class="min"></a> </li>
-</ul>
-
-<div class="lbox" id="img1">
-<div class="box_img">
-<a href="#img30" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/uai.jpeg" class="tamanho">
-<a href="#img2" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img2">
-<div class="box_img">
-<a href="#img1" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria1.jpeg" class="tamanho"> <h1>Corrida em Minas gerais</h1>
-<a href="#img3" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img3">
-<div class="box_img">
-<a href="#img2" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria2.jpeg" class="tamanho">
-<a href="#img4" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img4">
-<div class="box_img">
-<a href="#img3" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria3.jpeg" class="tamanho">
-<a href="#img5" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img5">
-<div class="box_img">
-<a href="#img4" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/05.jpeg" width="50%" height="50%">
-<a href="#img7" class="btn" id="next" class="tamanho">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img6">
-<div class="box_img">
-<a href="#img5" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria5.jpeg" class="tamanho">
-<a href="#img7" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img7">
-<div class="box_img">
-<a href="#img6" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria6.jpeg" class="tamanho">
-<a href="#img8" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img8">
-<div class="box_img">
-<a href="#img7" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria7.jpeg" class="tamanho">
-<a href="#img9" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img9">
-<div class="box_img">
-<a href="#img8" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria8.jpeg" class="tamanho">
-<a href="#img10" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img10">
-<div class="box_img">
-<a href="#img9" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria9.jpeg" class="tamanho">
-<a href="#img11" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img11">
-<div class="box_img">
-<a href="#img10" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria10.jpeg" class="tamanho">
-<a href="#img12" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img12">
-<div class="box_img">
-<a href="#img11" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria11.jpeg" class="tamanho">
-<a href="#img13" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img13">
-<div class="box_img">
-<a href="#img12" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria12.jpeg" class="tamanho">
-<a href="#img14" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img14">
-<div class="box_img">
-<a href="#img13" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria13.jpeg" class="tamanho">
-<a href="#img15" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img15">
-<div class="box_img">
-<a href="#img14" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria14.jpeg" class="tamanho">
-<a href="#img16" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img16">
-<div class="box_img">
-<a href="#img15" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria15.jpeg" class="tamanho">
-<a href="#img17" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img17">
-<div class="box_img">
-<a href="#img16" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria16.jpeg" class="tamanho">
-<a href="#img18" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img18">
-<div class="box_img">
-<a href="#img17" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria17.jpeg" class="tamanho">
-<a href="#img19" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img19">
-<div class="box_img">
-<a href="#img18" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria18.jpeg" class="tamanho">
-<a href="#img20" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img20">
-<div class="box_img">
-<a href="#img19" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria19.jpeg" class="tamanho">
-<a href="#img21" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img21">
-<div class="box_img">
-<a href="#img20" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria20.jpeg" class="tamanho">
-<a href="#img22" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img22">
-<div class="box_img">
-<a href="#img21" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria21.jpeg" class="tamanho">
-<a href="#img23" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img23">
-<div class="box_img">
-<a href="#img22" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria22.jpeg" class="tamanho">
-<a href="#img24" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img24">
-<div class="box_img">
-<a href="#img23" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria23.jpeg" class="tamanho">
-<a href="#img25" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img25">
-<div class="box_img">
-<a href="#img24" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria24.jpeg" class="tamanho">
-<a href="#img26" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img26">
-<div class="box_img">
-<a href="#img25" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria25.jpeg" class="tamanho">
-<a href="#img27" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img27">
-<div class="box_img">
-<a href="#img26" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria26.jpeg" class="tamanho">
-<a href="#img28" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img28">
-<div class="box_img">
-<a href="#img27" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria27.jpeg" class="tamanho">
-<a href="#img29" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img29">
-<div class="box_img">
-<a href="#img28" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria28.jpeg" class="tamanho">
-<a href="#img30" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-<div class="lbox" id="img30">
-<div class="box_img">
-<a href="#img29" class="btn" id="prev">&#171;</a>
-<a href="" class="btn" id="close">X</a>
-<img src="imagens/galeria29.jpeg" class="tamanho">
-<a href="#img1" class="btn" id="next">&#187;</a>
-</div>
-</div>
-
-
-
-</center>
-
-
-
-
-
 
 
  <div class="rodape">
  			
 
-	<a href="#inicio">ÍNICIO</a>
+	<a href="#inicio"><button class="bt bt-az">ÍNICIO</a></button>
  		
  		&nbsp; &nbsp; &nbsp; &nbsp; 
  		 
  		
- 			<a href="#contato">CONTATO</a>
+ 			<a href="#contato"><button class="bt bt-az">CONTATO</a></button>
  	
  		&nbsp; &nbsp; &nbsp; &nbsp; 
  	
- 			<a href="#galeria">GALERIA</a>
+ 			<a href="galeria.html"><button class="bt bt-az">GALERIA</a></button>
  </div>
 
 </body>
